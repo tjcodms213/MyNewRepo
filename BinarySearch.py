@@ -3,11 +3,11 @@ def binary_search(arr, target):
 
 
     
-    # Start of binary search
+    
     while left <= right:
         mid = (left + right) // 2
 
-        # Mid evaluation comment
+        
         if arr[mid] == target:
             return mid
         elif arr[mid] < target:
@@ -15,7 +15,7 @@ def binary_search(arr, target):
         else:
             right = mid - 1
 
-    # Return -1 when not found
+    
     return -1
 
 
@@ -26,6 +26,6 @@ if __name__ == "__main__":
     result = binary_search(numbers, target)
 
     if result != -1:
-        print(f"Element found at index {result}")
+        print(f"Rsult {result}")
     else:
-        print("Element not found in array")
+        print("None")

@@ -4,7 +4,7 @@ def partition(arr, low, high):
     pivot = arr[high]
     i = low - 1
     
-
+# Partition algorithm for quick sort
     for j in range(low, high):
         if arr[j] <= pivot:
             i += 1
@@ -22,7 +22,7 @@ def quick_sort(arr, low, high):
 
 
 if __name__ == "__main__":
-    
+    #Test codes
     numbers = [10, 7, 8, 9, 1, 5]
     quick_sort(numbers, 0, len(numbers) - 1)
     print("Sorted array:", numbers)
