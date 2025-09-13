@@ -1,3 +1,4 @@
+# Greatest Common Divisor algorithm
 def gcd_euclidean(a, b):
     while b:
         a, b = b, a % b
